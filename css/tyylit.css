@@ -1,0 +1,16 @@
+﻿#eka {
+    float: left;
+}
+
+img {
+    margin: 10px;
+}
+
+#toka {
+    clear: both;
+    float: right;
+}
+
+table {
+    border: 1px solid black;
+}
