@@ -13,4 +13,20 @@ img {
 
 table {
     border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    border: 1px solid black;
+    background-color: #F00000;
+    color: #ffffff
+}
+
+tr:nth-child(even) {
+    background-color: #FFF000;
+}
+
+td {
+    border: 1px solid black;
 }

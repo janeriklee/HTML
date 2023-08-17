@@ -1,0 +1,31 @@
+﻿table {
+    width: 450px;
+    border-collapse: collapse;
+}
+
+thead th, thead td {
+    background-color: #cbc9c9;
+    font-weight: bold;
+}
+
+td {
+    border: 1px solid grey;
+    text-align: right;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #eeeeee;
+}
+
+tbody tr:nth-child(odd) {
+     background-color: #ffffff;
+}
+
+tfoot td {
+     background-color: #cbc9c9;
+     font-weight: bold;
+}
+
+th {
+    text-align: left;
+}
