@@ -1,0 +1,22 @@
+.kotsikko-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #90E0EF;
+}
+
+.kotsikko {
+    color: #023E8A;
+}
+
+.navigaatio-container {
+    position: absolute;
+    top: 85px;
+    left: 796px;
+    height: 20px;
+}
+
+.sisalto-container {
+
+}

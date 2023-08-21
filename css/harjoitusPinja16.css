@@ -1,0 +1,65 @@
+.otsikko {
+    color: #018100;
+}
+
+.nimi {
+    font-family: 'Passion One', sans-serif;
+}
+
+.luku {
+    display: inline-block;
+}
+
+.wili {
+    font-family: 'Lato', sans-serif;
+}
+
+.wdicm {
+    font-family: 'Poppins', sans-serif;
+}
+
+.wcigs {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* VÄRIT */
+
+.väri1 {
+    color: red;
+}
+
+.väri2 {
+    color: blue;
+}
+
+.väri3 {
+    color: yellow;
+}
+
+.väri4 {
+    color: green;
+}
+
+.väri5 {
+    color: purple;
+}
+
+.väri6 {
+    color: pink;
+}
+
+.väri7 {
+    color: cyan;
+}
+
+.väri8 {
+    color: gray;
+}
+
+.väri9 {
+    color: saddlebrown;
+}
+
+.väri10 {
+    color: gold;
+}
