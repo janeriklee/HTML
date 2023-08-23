@@ -1,0 +1,94 @@
+.kotsikko-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #000000;
+    padding: 20px;
+}
+
+.logo {
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    padding: 20px;
+}
+
+.navigaatio-container {
+    position: absolute;
+    top: 127px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Tilt Warp', sans-serif;
+    font-size: 14px;
+}
+
+a:visited {
+    color: #ffffff;
+}
+
+.logo-linkki {
+    display: block; /* Make the link cover the entire image */
+}
+
+.sisalto-container {
+    font-family: 'Tilt Warp', sans-serif;
+    text-align: center;
+}
+
+hr {
+    color: #000000;
+}
+
+.tunnetut-janerikit {
+    font-family: 'Tilt Warp', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lähde {
+    font-family: 'Tilt Warp', sans-serif;
+    color: #000000;
+    text-align: center;
+}
+
+.lähde-a {
+    font-family: 'Tilt Warp', sans-serif;
+    color: #000000;
+    text-decoration: underline;
+    background-color: #000000;
+}
+
+.tiesitkö-container {
+    font-family: 'Tilt Warp', sans-serif;
+    position: absolute;
+    top: 250px;
+    left: 92%;
+    transform: translate(-50%, -50%);
+    width: 15%;
+    padding: 0px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.lopputeksti {
+    font-family: 'Tilt Warp', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #000000;
+    text-align: center;
+}
