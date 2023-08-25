@@ -39,7 +39,7 @@ a {
     }
 
 .logo-linkki {
-    display: block; /* Make the link cover the entire image */
+    display: block;
 }
 
 .sisalto-container {
@@ -65,4 +65,29 @@ a {
 .alaotsikko {
     text-align: center;
     font-size: 14px;
+}
+
+.image-container {
+    display: inline-block;
+    width: 28%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.tiesitkö-container {
+    font-family: 'Tilt Warp', sans-serif;
+    position: absolute;
+    top: 245px;
+    left: 92%;
+    transform: translate(-50%, -50%);
+    width: 15%;
+    padding: 0px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #000000;
 }

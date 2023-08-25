@@ -59,6 +59,19 @@ a:visited {
 }
 
 .logo-linkki {
-    display: block; /* Make the link cover the entire image */
+    display: block;
+}
+
+.tiesitkö-container {
+    font-family: 'Tilt Warp', sans-serif;
+    position: absolute;
+    top: 285px;
+    left: 92%;
+    transform: translate(-50%, -50%);
+    width: 15%;
+    padding: 0px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #000000;
 }
 
