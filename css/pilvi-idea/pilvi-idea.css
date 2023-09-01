@@ -1,12 +1,88 @@
+.form form {
+    position: absolute;
+    top: 280px;
+    right: 290px;
+    border: 4px solid #000000;
+    border-color: #5b9fd7;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+.form hr {
+    height: 1px;
+    background-color: #dddddd;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form h2 {
+    font-family: 'Great Vibes', sans-serif;
+    margin-bottom: -10px;
+}
+
 .yläpalkki {
     text-align: center;
 }
 
 .ylähr {
-    height: 6px;
+    height: 7px;
     background-color: #58a2da;
+    margin-left: 280px;
+    margin-right: 280px;
+    margin-top: -4px;
+    border: none;
 }
 
 .otsikko {
     text-align: center;
+    font-family: 'Courgette', sans-serif;
+    font-size: 13px;
+    margin-top: 30px;
+}
+
+.alateksti {
+    font-family: 'Great Vibes', sans-serif;
+    font-size: 20px;
+    margin-top: -10px;
+}
+
+.pointti {
+    font-family: 'Great Vibes', sans-serif;
+    font-size: 25px;
+    display: flex;
+}
+
+.alaotsikko {
+
+}
+
+.keskihr {
+    height: 1px;
+    background-color: #dddddd;
+    border: none;
+    margin-right: 695px;
+}
+
+.alinhr {
+    height: 1px;
+    background-color: #dddddd;
+    border: none;
+}
+
+.cr {
+    text-align: center;
+    margin-top: -7px;
+    color: #9999aa;
+}
+
+.kaikki {
+    margin-left: 245px;
+    margin-right: 280px;
+}
+
+.kaikki p {
+    font-family: sans-serif;
 }
