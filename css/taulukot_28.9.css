@@ -1,20 +1,34 @@
-﻿.taulukko1 {
+﻿.taulukot {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.taulukko1 {
     background-color: orange;
     padding: 10px;
     margin-right: 1370px;
-    display: block;
 }
 
 .taulukko2 {
     background-color: lightblue;
     padding: 10px;
     margin-right: 1370px;
-    display: block;
 }
 
 .taulukko3 {
     background-color: deepskyblue;
     padding: 10px;
     margin-right: 1370px;
-    display: block;
+}
+
+.taulukko4 {
+    background-color: royalblue;
+    padding: 10px;
+    margin-right: 1370px;
+}
+
+.taulukko5 {
+    background-color: greenyellow;
+    padding: 10px;
+    margin-right: 1370px;
 }
