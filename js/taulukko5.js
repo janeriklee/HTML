@@ -12,7 +12,9 @@ document.addEventListener("DOMContentLoaded", function () {
                     ajoneuvo = "polkupy\u00F6r\u00E4\u00E4 ja s\u00E4hk\u00F6potkulautaa.";
                 } else if (ika === 15) {
                     ajoneuvo = "mopoa.";
-                } else if (ika === 16 || ika === 17) {
+                } else if (ika === 16) {
+                    ajoneuvo = "kevaria.";
+                }else if (ika === 17) {
                     ajoneuvo = "kevaria. Voit my\u00F6s hakea erityislupaa autokorttiin.";
                 } else if (ika === 18) {
                     ajoneuvo = "autoa.";
