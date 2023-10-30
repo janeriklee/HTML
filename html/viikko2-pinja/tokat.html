@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Muuttuja tehtävä</title>
+    <link href="../../css/viikko2/tokat.css" type="text/css" rel="stylesheet">
+    <script src="../../js/viikko2/karkausv.js"></script>
+    <script src="../../js/viikko2/multikerto.js"></script>
+    <script src="../../js/viikko2/posneg.js"></script>
+    <script src="../../js/viikko2/sumjaksk.js"></script>
+    <script src="../../js/viikko2/viikonpv.js"></script>
+</head>
+<body>
+    <div class="taulukko">
+        <h2>Karkausvuosi</h2>
+        <p>Tämä on ohjelma joka kertoo, onko antamasi vuosi karkausvuosi.</p>
+        <div class="kentta">
+            <label for="luku">Anna luku:</label><br>
+            <input type="text" id="luku" name="luku"><br><br>
+        </div>
+        <input type="button" id="tarkista" value="Tarkista">
+        <p><span id="tulos"></span></p>
+    </div>
+    <div class="taulukko">
+        <h2>Kertolasku</h2>
+        <p>Tämä on ohjelma joka kertoo antamasi numeron kymmenellä eri tavalla.</p>
+        <div class="kentta">
+            <label for="luku1">Anna luku:</label><br>
+            <input type="text" id="luku1" name="luku1"><br><br>
+        </div>
+        <input type="button" id="tarkista1" value="Tarkista" onclick="calculate()">
+        <p><span id="tulos1"></span></p>
+    </div>
+    <div class="taulukko">
+        <h2>Positiivinen vai negatiivinen</h2>
+        <p>Tämä on ohjelma joka kertoo, onko antamasi luku positiivinen vai negatiivinen</p>
+        <div class="kentta">
+            <label for="luku2">Anna luku:</label><br>
+            <input type="text" id="luku2" name="luku2"><br><br>
+        </div>
+        <input type="button" id="tarkista2" value="Tarkista">
+        <p><span id="tulos2"></span></p>
+    </div>
+    <div class="taulukko">
+        <h2>Summa sekä keskiarvo</h2>
+        <p>Tämä on ohjelma joka kertoo lukujesi summan sekä keskiarvon.</p>
+        <div class="kentta">
+            <label for="luku1">Anna luku:</label><br>
+            <input type="text" id="summa1" name="summa1"><br>
+            <label for="luku2">Anna luku:</label><br>
+            <input type="text" id="summa2" name="summa2"><br>
+            <label for="luku3">Anna luku:</label><br>
+            <input type="text" id="summa3" name="summa3"><br>
+            <label for="luku4">Anna luku:</label><br>
+            <input type="text" id="summa4" name="summa4"><br>
+            <label for="luku5">Anna luku:</label><br>
+            <input type="text" id="summa5" name="summa5"><br><br>
+        </div>
+        <input type="button" id="tarkista3" value="Tarkista"  onclick="laske()">
+        <p><span id="tulos3"></span></p>
+    </div>
+    <div class="taulukko">
+        <h2>Positiivinen vai negatiivinen</h2>
+        <p>Tämä on ohjelma joka kertoo viikonpäivän numeron perusteella.</p>
+        <div class="kentta">
+            <label for="luku4">Anna luku:</label><br>
+            <input type="text" id="luku4" name="luku4"><br><br>
+        </div>
+        <input type="button" id="tarkista4" value="Tarkista">
+        <p><span id="tulos4"></span></p>
+    </div>
+</body>
+</html>
