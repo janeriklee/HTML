@@ -7,15 +7,15 @@
     <script src="../../js/viikko2/multikerto.js"></script>
 </head>
 <body>
-<div class="taulukko">
-    <h2>Kertolasku</h2>
-    <p>Tämä on ohjelma joka kertoo antamasi numeron annetulla tavalla</p>
-    <div class="kentta">
-        <label for="luku">Anna luku:</label><br>
-        <input type="text" id="luku" name="luku"><br><br>
+    <div class="taulukko">
+        <h2>Kertolasku</h2>
+        <p>Tämä on ohjelma joka kertoo antamasi numeron kymmenellä eri tavalla.</p>
+        <div class="kentta">
+            <label for="luku">Anna luku:</label><br>
+            <input type="text" id="luku" name="luku"><br><br>
+        </div>
+        <input type="button" id="tarkista" value="Tarkista" onclick="calculate()">
+        <p><span id="tulos"></span></p>
     </div>
-    <input type="button" id="tarkista" value="Tarkista">
-    <p><span id="tulos"></span></p>
-</div>
 </body>
 </html>
