@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (translatedText) {
             outputText.textContent = "K\u00E4\u00E4nn\u00F6s: " + translatedText;
         } else {
-            alert("Käännös epäonnistui.");
+            alert("K\u00E4\u00E4nn\u00F6s ep\u00E4onnistui.");
         }
     });
 });
