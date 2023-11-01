@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parilliset luvut</title>
+    <link href="../../css/viikko3/ekat.css" type="text/css" rel="stylesheet">
+    <script src="../../js/viikko3/pariluku.js"></script>
+    <script src="../../js/viikko3/salasana.js"></script>
+    <script src="../../js/viikko3/onkokirjainta.js"></script>
+    <script src="../../js/viikko3/kertoma.js"></script>
+</head>
+<body>
+    <div class="taulukko">SS
+    <h2>PARILLISET LUVUT</h2>
+    <p>Tämä on ohjelma, joka pyytää käyttäjältä parillista lukua ja tulostaa tämän jälkeen kaikki parilliset luvut siihen asti poislukien 0:n</p>
+    <label for="sisaantulo">Syötä parillinen luku:</label><br>
+    <input type="number" id="sisaantulo">
+    <button onclick="parillisetNumerot()">Tulosta parilliset luvut</button>
+    <p id="vastaus"></p>
+    </div>
+
+    <div class="taulukko">
+        <h2>PARILLISET LUVUT</h2>
+        <p>Tämä on ohjelma, joka muuntaa käyttäjän antaman sanan salasanaksi siten, että laittaa joka toiseksi kirjaimeksi ison Ö-kirjaimen, eli jos sana on Kaappi, se olisi KÖaÖaÖpÖpÖiÖ</p>
+        <label for="sisaantulo1">Syötä sana:</label><br>
+        <input type="text" id="sisaantulo1">
+        <button onclick="muutaSalasanaksi()">Muuta salasanaksi</button>
+        <p id="vastaus1"></p>
+    </div>
+
+    <div class="taulukko">
+        <h2>ONKO Ö KIRJAINTA</h2>
+        <p>Tämä on ohjelma, joka tarkastaa, onko antamassasi sanassa ö-kirjainta ja kirjoittaa vastaukseksi joko: on tai ei ole</p>
+        <label for="sisaantulo2">Syötä sana:</label><br>
+        <input type="text" id="sisaantulo2">
+        <button onclick="tarkistaKirjain()">Tarkista</button>
+        <p id="vastaus2"></p>
+    </div>
+
+    <div class="taulukko">
+        <h2>LASKUKONE</h2>
+        <p>Tämä on ohjelma, joka laskee annetun luvun kertoman (esim: 4 -> 4*3*2*1 = 24)</p>
+        <label for="sisaantulo3">Syötä sana:</label><br>
+        <input type="text" id="sisaantulo3">
+        <button onclick="tarkistaKirjain()">Tarkista</button>
+        <p id="vastaus3"></p>
+    </div>
+</body>
+</html>
+
+
