@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OTA YHTEYTTÄ</title>
+    <link rel="stylesheet" type="text/css" href="ota_yhteytta.css">
+</head>
+<body>
+<div class="forms">
+<h2>Kirjautumislomake</h2>
+<form>
+  <label for="nimi">Käyttäjänimi:</label><br>
+  <input type="text" id="nimi" name="nimi"><br><br>
+  <label for="salasana">Salasana:</label><br>
+  <input type="text" id="salasana" name="salasana"><br><br>
+    <!-- Ensimmäinen valikko -->
+    <label for="valikko"><b>Seuraavaa tietoa ei jaata muille käyttäjille<br>Käytän konetta:</b><br>
+    <input type="radio" id="opiskeluun" name="valinta" value="opiskeluun">
+    <label for="opiskeluun">Opiskeluun</label><br>
+    <input type="radio" id="ajanviettoon" name="color" value="ajanviettoon">
+    <label for="ajanviettoon">Ajan viettoon</label><br>
+    <input type="radio" id="molempiin" name="color" value="molempiin">
+    <label for="molempiin">Molempiin</label><br>
+        <!-- Dropdown valikko -->
+        <label for="lemmikki"><b>Söpöin lemmikki:</b><br>
+        <select id="lemmikki" name="lemmikki">
+        <option value="koira">Koira</option>
+        <option value="koira">Koira</option>
+        <option value="koira">Koira</option><br>
+        </select><br>
+            <!-- Toinen valikko -->
+            <label for="valikko"><b>Miten onnistuimme:</b><br>
+            <input type="radio" id="red" name="color" value="red">
+            <label for="red">Todella hyvin</label><br>
+            <input type="radio" id="blue" name="color" value="blue">
+            <label for="blue">Todella hyvin +</label><br>
+            <input type="radio" id="green" name="color" value="green">
+            <label for="green">Todella hyvin ++</label><br>
+         <!-- Palaute -->   
+        <label for="palaute"><b>Anna palautetta:</b></label><br>
+        <textarea id="palaute" name="palaute" rows="6" cols="30"></textarea><br><br>
+        <input type="laheta" value="Lähetä">
+</form>
+</div>
+</body>
+</html>

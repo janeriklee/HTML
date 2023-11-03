@@ -1,0 +1,13 @@
+.forms {
+    background-color: orange;
+    padding: 10px;
+    margin: 20px;
+    display: inline-block;
+}
+
+.forms h2 {
+    background-color: red;
+    margin-left: -10px;
+    margin-right: -10px;
+    text-align: center;
+  }
