@@ -1,45 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>OTA YHTEYTTÄ</title>
+    <title>Kirjaudu</title>
+    <link href='https://fonts.googleapis.com/css?family=Fugaz One' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="ota_yhteytta.css">
+    <script src="muu.js"></script>
 </head>
 <body>
 <div class="forms">
-<h2>Kirjautumislomake</h2>
-<form>
-  <label for="nimi">Käyttäjänimi:</label><br>
-  <input type="text" id="nimi" name="nimi"><br><br>
-  <label for="salasana">Salasana:</label><br>
-  <input type="text" id="salasana" name="salasana"><br><br>
-    <!-- Ensimmäinen valikko -->
-    <label for="valikko"><b>Seuraavaa tietoa ei jaata muille käyttäjille<br>Käytän konetta:</b><br>
-    <input type="radio" id="opiskeluun" name="valinta" value="opiskeluun">
-    <label for="opiskeluun">Opiskeluun</label><br>
-    <input type="radio" id="ajanviettoon" name="color" value="ajanviettoon">
-    <label for="ajanviettoon">Ajan viettoon</label><br>
-    <input type="radio" id="molempiin" name="color" value="molempiin">
-    <label for="molempiin">Molempiin</label><br>
+    <form>
+        <h2>Kirjaudu</h2>
+        <label for="nimi"><b>Käyttäjänimi:</b></label>
+        <input type="text" id="nimi" name="nimi"><br>
+        <label for="salasana"><b>Salasana:</b></label>
+        <input type="password" id="salasana" name="salasana">
+        <hr>
         <!-- Dropdown valikko -->
-        <label for="lemmikki"><b>Söpöin lemmikki:</b><br>
-        <select id="lemmikki" name="lemmikki">
-        <option value="koira">Koira</option>
-        <option value="koira">Koira</option>
-        <option value="koira">Koira</option><br>
-        </select><br>
-            <!-- Toinen valikko -->
-            <label for="valikko"><b>Miten onnistuimme:</b><br>
-            <input type="radio" id="red" name="color" value="red">
-            <label for="red">Todella hyvin</label><br>
-            <input type="radio" id="blue" name="color" value="blue">
-            <label for="blue">Todella hyvin +</label><br>
-            <input type="radio" id="green" name="color" value="green">
-            <label for="green">Todella hyvin ++</label><br>
-         <!-- Palaute -->   
-        <label for="palaute"><b>Anna palautetta:</b></label><br>
-        <textarea id="palaute" name="palaute" rows="6" cols="30"></textarea><br><br>
-        <input type="laheta" value="Lähetä">
-</form>
+        <label for="sukupuoli"><b>Sukupuoli:</b><br>
+            <select id="sukupuoli" name="lemmikki">
+                <option value="mies">Mies</option>
+                <option value="nainen">Nainen</option>
+                <option value="muu">Muu</option>
+            </select><br>
+        <!-- Valikko 2 -->
+        <label for="valikko2"><b>Olen:</b><br>
+            <input type="radio" id="opiskelija" name="valinta2" value="opiskelija">
+            <label for="opiskelija">Opiskelija</label>
+            <input type="radio" id="tyossakayva" name="valinta2" value="tyossakayva">
+            <label for="tyossakayva">Työssäkäyvä</label>
+            <input type="radio" id="tyoton" name="valinta2" value="tyoton">
+            <label for="tyoton">Työtön</label><br>
+        <!-- Valikko 3 -->
+        <label for="valikko3"><b>Osaan:</b><br>
+            <input type="checkbox" id="html" name="valinta3" value="html">
+            <label for="html">HTML</label>
+            <input type="checkbox" id="css" name="valinta3" value="css">
+            <label for="css">CSS</label>
+            <input type="checkbox" id="js" name="valinta3" value="js">
+            <label for="js">JavaScript</label>
+            <input type="checkbox" id="muu2" name="valinta3" value="muu2" onclick="toggleText2()">
+            <label for="muu2">Muu, mikä?</label>
+            <input type="text" id="muu2-text" style="display: none;" placeholder="Mikä?"><br>
+        <!-- Palaute -->
+        <hr>
+        <label for="bio"><b>Kerro itsestäsi:</b></label><br>
+        <textarea id="bio" name="bio" rows="6" cols="55" placeholder="Kerro jotain.."></textarea><br>
+        <input type="submit" value="Lähetä">
+    </form>
 </div>
 </body>
 </html>

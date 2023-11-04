@@ -1,13 +1,128 @@
+/* Koko forms */
 .forms {
-    background-color: orange;
+    background-color: #00ABE4;
     padding: 10px;
     margin: 20px;
     display: inline-block;
+    border-radius: 10px;
+    border: 2px solid #122e55;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 710px;
+    margin-right: 710px;
 }
 
+/* Otsikko */
 .forms h2 {
-    background-color: red;
+    background-color: #122e55;
+    color: #E9F1FA;
     margin-left: -10px;
     margin-right: -10px;
     text-align: center;
+    font-family: 'Fugaz One';
   }
+
+/* Viivat */
+hr {
+    border: none;
+    width: 459.5px; /* Adjust the width of the vertical line */
+    height: 2px; /* Set the height to fill the entire height of the container */
+    background-color: #122e55; /* Set the color of the vertical line */
+    margin-bottom: 10px;
+}
+
+/* Kysymysten tekstit */
+label {
+    color: #122e55; /* Set the desired color here */
+    font-family: 'Fugaz One';
+}
+
+/* "Lähetä" nappi */
+.forms input[type="submit"] {
+    background-color: #122e55;
+    color: #E9F1FA;
+    padding: 8px 25px;
+    font-size: 15px;
+    border-radius: 6px;
+    size: 50px;
+    border: none;
+    font-family: 'Fugaz One';
+    cursor: pointer;
+}
+
+/* Käyttäjänimi ja Salasana */
+.forms input[type="radio"] {
+    border: none;
+    background-color: #E9F1FA;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+
+ /* Käyttäjänimi teksti osio */
+ .forms input#nimi {
+    width: 345px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 1px;
+    margin-bottom: 10px;
+    background-color: #E9F1FA;
+    font-family: 'Fugaz One';
+ }
+
+/* Salasana teksti osio */
+ .forms input#salasana {
+    width: 345px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 1px;
+    margin-bottom: 10px;
+    background-color: #E9F1FA;
+    font-family: 'Fugaz One';
+    position: relative;
+    left: 33px;
+ }
+
+ /* Teksti osio kun painaa "Muu, mikä?" */
+ .forms input#muu2-text {
+    width: 360px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 1px;
+    margin-bottom: -18px;
+    background-color: #E9F1FA;
+    font-family: 'Fugaz One';
+ }
+
+ /* Bio teksti osio */
+ .forms textarea#bio {
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    resize: none;
+    margin-bottom: 10px;
+    background-color: #E9F1FA;
+    font-family: 'Fugaz One';
+  }
+
+  /* Lemmikki valikko */
+  .forms select#sukupuoli {
+    border: none;
+    border-radius: 5px;
+    padding: 1px 20px;
+    margin-bottom: 10px;
+    color: #122e55;
+    background-color: #E9F1FA;
+    font-family: 'Fugaz One';
+    cursor: pointer;
+  }
+
+  .forms input[type="checkbox"] {
+    cursor: pointer;
+    border: none;
+    background-color: #E9F1FA;
+  }
+
