@@ -108,7 +108,7 @@ label {
     font-family: 'Fugaz One';
   }
 
-  /* Lemmikki valikko */
+  /* Sukupuoli valikko */
   .forms select#sukupuoli {
     border: none;
     border-radius: 5px;
@@ -120,9 +120,33 @@ label {
     cursor: pointer;
   }
 
+  /* Koodikieli valikko */
   .forms input[type="checkbox"] {
     cursor: pointer;
     border: none;
     background-color: #E9F1FA;
   }
 
+  /* RESPONSIVE */
+  @media only screen {
+    .forms {
+      margin: 10px;
+      padding: 20px;
+      width: 440px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+    .forms input#nimi,
+    .forms input#salasana,
+    .forms input#muu2-text,
+    .forms textarea#bio,
+    .forms select#sukupuoli {
+        width: 100%;
+    }
+
+    .forms input#salasana {
+      width: calc(100% - 0px);
+      position: static;
+  }
+}
