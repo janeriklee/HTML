@@ -26,15 +26,15 @@
 /* Viivat */
 hr {
     border: none;
-    width: 459.5px; /* Adjust the width of the vertical line */
-    height: 2px; /* Set the height to fill the entire height of the container */
-    background-color: #122e55; /* Set the color of the vertical line */
+    width: 459.5px;
+    height: 2px;
+    background-color: #122e55;
     margin-bottom: 10px;
 }
 
 /* Kysymysten tekstit */
 label {
-    color: #122e55; /* Set the desired color here */
+    color: #122e55;
     font-family: 'Fugaz One';
 }
 

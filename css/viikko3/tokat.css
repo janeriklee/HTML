@@ -1,0 +1,17 @@
+.taulukko {
+    background-color: orange;
+    padding: 10px;
+    margin: 20px;
+    display: inline-block;
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+    margin: 10px auto;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 10px;
+}

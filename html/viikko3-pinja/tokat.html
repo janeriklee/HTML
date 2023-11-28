@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Viikko 3 tokat</title>
+    <link href="../../css/viikko3/tokat.css" type="text/css" rel="stylesheet">
+    <script src="../../js/viikko3/tokat/scrabble.js"></script>
+    <script src="../../js/viikko3/tokat/lotto.js"></script>
+    <script src="../../js/viikko3/tokat/taulukko.js"></script>
+    <script src="../../js/viikko3/tokat/korttipakka.js"></script>
+</head>
+<body>
+    <div class="taulukko">
+        <h2>SCRABBLE-PISTEET</h2>
+        <p>Tämä on ohjelma, joka laskee Scrabble-pelin sanan kirjainpisteet</p>
+        <label for="scrabbleSana">Syötä Scrabble-sana:</label><br>
+        <input type="text" id="scrabbleSana" maxlength="20"><br><br>
+        <button onclick="laskePisteet()">Laske pisteet</button>
+        <p id="vastaus11"></p>
+    </div>
+
+    <div class="taulukko">
+        <h2>LOTTONUMEROT</h2>
+        <p>Tämä on ohjelma, joka arpoo lottonumerot</p>
+        <button onclick="arpooLottonumerot()">Arvo lottonumerot</button>
+        <p id="vastaus12"></p>
+    </div>
+
+    <div class="taulukko">
+        <h2>TAULUKKOMUUNNOS</h2>
+        <p>Tämä on ohjelma, joka muuntaa 2-ulotteisen taulukon taulukkomuotoon</p>
+        <button onclick="muunnaTaulukko()">Muunna taulukko</button>
+        <p id="vastaus13"></p>
+    </div>
+
+    <div class="taulukko">
+        <h2>KORTTIPAKAN KORTIT</h2>
+        <p>Tämä on ohjelma, joka luo korttipakan kortit, sekoittaa pakan ja arpoo 5 korttia</p>
+        <button onclick="arpooKortit()">Arvo kortit</button>
+        <p id="vastaus14"></p>
+    </div>
+</body>
+</html>

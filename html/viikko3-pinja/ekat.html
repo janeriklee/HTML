@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Parilliset luvut</title>
+    <title>Viikko 3 ekat</title>
     <link href="../../css/viikko3/ekat.css" type="text/css" rel="stylesheet">
-    <script src="../../js/viikko3/pariluku.js"></script>
-    <script src="../../js/viikko3/salasana.js"></script>
-    <script src="../../js/viikko3/onkokirjainta.js"></script>
-    <script src="../../js/viikko3/kertoma.js"></script>
+    <script src="../../js/viikko3/ekat/pariluku.js"></script>
+    <script src="../../js/viikko3/ekat/salasana.js"></script>
+    <script src="../../js/viikko3/ekat/onkokirjainta.js"></script>
+    <script src="../../js/viikko3/ekat/kertoma.js"></script>
+    <script src="../../js/viikko3/ekat/hipheijjaa.js"></script>
+    <script src="../../js/viikko3/ekat/luvut.js"></script>
+    <script src="../../js/viikko3/ekat/luvutyhteen.js"></script>
+    <script src="../../js/viikko3/ekat/korkoluku.js"></script>
+    <script src="../../js/viikko3/ekat/suurinpienin.js"></script>
+    <script src="../../js/viikko3/ekat/salasana2.js"></script>
+    <script src="../../js/viikko3/ekat/pienempijaisompi.js"></script>
 </head>
 <body>
-    <div class="taulukko">SS
+    <div class="taulukko">
     <h2>PARILLISET LUVUT</h2>
     <p>Tämä on ohjelma, joka pyytää käyttäjältä parillista lukua ja tulostaa tämän jälkeen kaikki parilliset luvut siihen asti poislukien 0:n</p>
     <label for="sisaantulo">Syötä parillinen luku:</label><br>
@@ -19,7 +26,7 @@
     </div>
 
     <div class="taulukko">
-        <h2>PARILLISET LUVUT</h2>
+        <h2>SALASANA</h2>
         <p>Tämä on ohjelma, joka muuntaa käyttäjän antaman sanan salasanaksi siten, että laittaa joka toiseksi kirjaimeksi ison Ö-kirjaimen, eli jos sana on Kaappi, se olisi KÖaÖaÖpÖpÖiÖ</p>
         <label for="sisaantulo1">Syötä sana:</label><br>
         <input type="text" id="sisaantulo1">
@@ -43,6 +50,77 @@
         <input type="text" id="sisaantulo3">
         <button onclick="tarkistaKirjain()">Tarkista</button>
         <p id="vastaus3"></p>
+    </div>
+
+    <div class="taulukko">
+        <h2>HIPHEIJJAA</h2>
+        <p>Syötä luku ja tulosta luvut:</p>
+        <label for="sisaantulo4">Syötä luku:</label><br>
+        <input type="number" id="sisaantulo4" min="1" max="100">
+        <button onclick="tulostaLuvut()">Tulosta</button>
+        <p id="vastaus4"></p>
+    </div>
+
+    <div class="taulukko">
+        <h2>LUVUT 1-10</h2>
+        <p>Tämä ohjelma tulostaa 10 ensimmäistä numeroa</p>
+        <button onclick="tulostaLuvut()">Tulosta</button>
+        <p id="vastaus5"></p>
+    </div>
+
+    <div class="taulukko">
+        <h2>LUVUT YHTEEN</h2>
+        <p>Tämä ohjelma laskee 10 ensimmäistä lukua yhteen</p>
+        <button onclick="laskeYhteen()">Laske</button>
+        <p id="vastaus6"></p>
+    </div>
+
+    <div class="taulukko">
+        <h2>KORKOLUKU</h2>
+        <p>Tämä on ohjelma, joka kysyy käyttäjältä kahta lukua ja laskee ensimmäisen potenssiin toinen esim. 5 ja 2 = 52 = 25</p>
+        <label for="korotettava">Syötä korotettava luku:</label><br>
+        <input type="number" id="korotettava" min="1"><br>
+        <label for="potenssi">Syötä potenssi:</label><br>
+        <input type="number" id="potenssi" min="1"><br><br>
+        <button onclick="laskePotenssi()">Laske</button>
+        <p id="vastaus7"></p>
+    </div>
+
+    <div class="taulukko">
+        <h2>SUURIN JA PIENIN</h2>
+        <p>Tämä on ohjelma, joka etsii annetusta luvuista suurimman ja pienimmän arvon</p>
+        <label for="luku1">Luku 1:</label><br>
+        <input type="number" id="luku1" min="1"><br>
+        <label for="luku2">Luku 2:</label><br>
+        <input type="number" id="luku2" min="1"><br>
+        <label for="luku3">Luku 3:</label><br>
+        <input type="number" id="luku3" min="1"><br>
+        <label for="luku4">Luku 4:</label><br>
+        <input type="number" id="luku4" min="1"><br>
+        <label for="luku5">Luku 5:</label><br>
+        <input type="number" id="luku5" min="1"><br><br>
+        <button onclick="etsiSuurinPienin()">Laske</button>
+        <p id="vastaus8"></p>
+    </div>
+
+    <div class="taulukko">
+        <h2>SALASANA 2</h2>
+        <p>Muokataan salasalatehtävää siten, että se arpoo kirjaimen Ö:n sijasta</p>
+        <label for="sisaantulo9">Syötä sana:</label><br>
+        <input type="text" id="sisaantulo9">
+        <button onclick="muunnaSalasanaksi()">Tulosta</button>
+        <p id="vastaus9"></p>
+    </div>
+
+    <div class="taulukko">
+        <h2>PIENEMPI JA ISOMPI</h2>
+        <p>Tämä on ohjelma, joka pyytää käyttäjältä kahta numeroa (jälkimmäisen tulee olla isompi) ja tulostaa tuolla välillä parilliset ja parittomat numerot sekä niiden summat</p>
+        <label for="pienempi">Anna pienempi numero:</label><br>
+        <input type="number" id="pienempi" min="1"><br>
+        <label for="isompi">Anna isompi numero:</label><br>
+        <input type="number" id="isompi" min="1"><br><br>
+        <button onclick="laskeNumerot()">Laske</button>
+        <p id="vastaus10"></p>
     </div>
 </body>
 </html>
